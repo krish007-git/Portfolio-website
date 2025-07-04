@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krish Panchal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Krish Panchal
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon" />
+            krish.arts07@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon" />
+            +9925351518
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image" />
+      </div>
+      <div>
+        <h1>
+          Hi, I'm Krish Panchal! <img src="html_finalprojimages/waving-hand.png" width="60px" />
+        </h1>
+        <p>
+         I'm a passionate frontend developer with 1 year of experience creating responsive and user-friendly websites. I specialize in building clean, modern interfaces using HTML, CSS, JavaScript, and frameworks like React. I enjoy turning design concepts into functional, interactive experiences that work seamlessly across devices
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" />
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" />
+          <h6>Node.js</h6>
+          <p>1.5 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" />
+          <h6>React</h6>
+          <p>1.5 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Calculator</h3>
+          <ul>
+            <li>Developed a calculator using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Shopping Web Page</h3>
+          <ul>
+            <li>Developed and deployed a shopping website using HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>HTML Forms</h3>
+          <ul>
+            <li>Created a dynamic html forms website</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Krish is a very quick learner and quickly grasps key concepts of Web development. He has a great attitude & is an excellent team player.
+          He has a curious mind and asks the right question. He takes initiative within a team and has the potential to lead.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Krish has been an awesome experience. He is highly knowledgeable and always goes the extra step to ensure everything is right.
+          For future projects that need his expertise, I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Krish during the initial phase of our venture which needed Web development. He is a committed resource who has in-depth knowledge about the domain.
+          He will be an asset for any organisation!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M19.5 12a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
